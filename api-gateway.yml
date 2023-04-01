@@ -21,7 +21,7 @@ spring:
         - id: appointment-service
           uri: lb://appointment-service
           predicates:
-            - Path=/api/v1/appointment/**
+            - Path=/api/v1/appointments/**
         
 management:
   endpoints:
