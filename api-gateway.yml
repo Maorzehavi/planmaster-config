@@ -18,6 +18,10 @@ spring:
   cloud:
     gateway:
       routes:
+        - id: appointment-service
+          uri: lb://appointment-service
+          predicates:
+            - Path=/api/v1/appointment/**
         
 management:
   endpoints:
